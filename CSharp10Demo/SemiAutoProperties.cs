@@ -1,6 +1,5 @@
-﻿//NOTE: This will not compile at the moment, since semi-auto properties are not included
-//in the C# 10 preview at publishing time.
-//However, this file will give you an idea of how this feature might work when C# 10 is available.
+﻿//NOTE: Microsoft decided not to include this feature in C# 10's release. I'll keep it here to keep my post consistent,
+//but know that this feature is not available in C# 10.
 
 namespace CSharp10Demo
 {
