@@ -25,14 +25,16 @@ namespace CSharp10Demo
 
     public class NullParameterCheckNewImplementation
     {
-        public string FormatName(string name!)
+        public string FormatName(string name)
         {
+            ArgumentNullException.ThrowIfNull(name, nameof(name));
             //...Rest of implementation
             return string.Empty;
         }
 
-        public void FormatCustomClass(MyCustomClass customClass!)
+        public void FormatCustomClass(MyCustomClass customClass)
         {
+            ArgumentNullException.ThrowIfNull(customClass, nameof(customClass));
             //...Rest of implementation
         }
     }
